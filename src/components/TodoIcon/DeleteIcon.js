@@ -1,13 +1,12 @@
 import React from 'react';
 import { TodoIcon } from './';
 
-function CompleteIcon({ completed, onComplete }) {
+function DeleteIcon({ onDelete }) {
     return (
         <TodoIcon
-            type="check"
-            color={completed ? '#4caf50' : 'gray'}
-            onClick={onComplete}
+            type="delete"
+            onClick={onDelete}
         />
     );
 }
-export { CompleteIcon};
+export { DeleteIcon };
